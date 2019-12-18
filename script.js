@@ -1,8 +1,10 @@
 $(document).ready(function(){
-$("saveBtn").on("click" , function(){
+$("#saveBtn").on("click" , function(){
     let value = $(this).siblings(".todo").val();
     let time = $(this).parent().attr("id")
     localStorage.setItem(value, time)
+    console.log(this)
+   
 
 }) 
 
@@ -16,8 +18,6 @@ $("#03" .todo).val(localStorage.getItem("#03"))
 $("#04" .todo).val(localStorage.getItem("#04"))
 
 })
-
-
 
 
 
